@@ -461,7 +461,7 @@ linear-gradient(
 
 .hero-title {
  
-  font-size: clamp(2.8rem,5vw,4.6rem);
+  font-size:clamp(2rem,8vw,4.6rem);
 line-height:1;
 font-weight:800;
   font-weight: 700;
@@ -1207,10 +1207,23 @@ font-weight:800;
 
 .footer-grid{
     display:grid;
-    grid-template-columns:2fr 1fr 1fr;
-    gap:5rem;
+    grid-template-columns:1fr;
+    gap:2rem;
     align-items:flex-start;
 }
+
+@media(min-width:768px){
+    .footer-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(min-width:1024px){
+    .footer-grid{
+        grid-template-columns:2fr 1fr 1fr;
+    }
+}
+
 
 @media(min-width:768px) {
   .footer-grid {
@@ -1513,4 +1526,30 @@ DOWNLOAD
     width:170px;
     height:55px;
     object-fit:contain;
+}
+
+@media (max-width:768px){
+
+.hero{
+    padding-top:110px;
+}
+
+.hero-title{
+    text-align:center;
+}
+
+.hero-lead{
+    text-align:center;
+    font-size:1rem;
+}
+
+.hero-cta{
+    justify-content:center;
+}
+
+.bullets{
+    margin-left:auto;
+    margin-right:auto;
+}
+
 }
