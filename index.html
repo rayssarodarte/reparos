@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reparos</title> 
+     <!-- – Pronto Serviço | Prestadores 24h na sua cidade</title> -->
+
+     
+  <meta name="description" content="Não perca tempo procurando prestadores. Serviço rápido, confiável, aplicativo gratuito, atendimento 24 horas." />
+  <meta property="og:title" content="Reparos – Pronto Serviço" />
+  <meta property="og:description" content="Conectando clientes e profissionais em tempo real, 24h por dia." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@0.469.0/font/lucide.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ==================== CABEÇALHO ====================
+       Contém a logo, menu de navegação e botão para download do aplicativo.
+  -->
+  <header id="header" class="header">
+  <div class="container header-inner">
+    <a href="#inicio" class="logo">
+      <div class="logo-badge">
+        <img src="imagens/logo.png" alt="Logo Reparos">
+      </div>
+     
+    </a>
+      <nav class="nav-desktop">
+        <a href="#inicio">Início</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#quem-somos">Quem somos</a>
+        <a href="#profissionais">Para profissionais</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+    <!-- Botão Download -->
+<div class="download-wrapper nav-cta">
+
+    <button id="downloadBtn" class="btn btn-primary btn-sm download-button">
+        <i class="icon icon-smartphone"></i>
+        Baixar Aplicativo
+        <span class="download-arrow">▼</span>
+    </button>
+
+    <div class="download-popup" id="downloadPopup">
+
+        <div class="popup-title">
+            Escolha sua plataforma
+        </div>
+
+        <!-- App Store -->
+        <a href="https://apps.apple.com/br/app/reparos/id6448963507"
+           target="_blank"
+           class="store-badge"
+           rel="noopener noreferrer">
+            <img class="app-badge"
+                 src="imagens/app.png"
+                 alt="Download na App Store">
+        </a>
+
+        <!-- Google Play -->
+        <a href="https://play.google.com/store/apps/details?id=scallop.aplicativos.reparos"
+           target="_blank"
+           class="store-badge"
+           rel="noopener noreferrer">
+            <img class="google-badge"
+                 src="imagens/google.png"
+                 alt="Google Play">
+        </a>
+
+    </div>
+
+</div>
+
+        <button id="menuToggle" class="menu-toggle" aria-label="Menu">
+          <i class="icon icon-menu"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="mobile-menu">
+      <div class="container">
+        <a href="#inicio">Início</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#quem-somos">Quem somos</a>
+        <a href="#profissionais">Para profissionais</a>
+       
+        <a href="#contato">Contato</a>
+        <a href="#download" class="btn btn-primary" style="margin-top:.5rem"><i class="icon icon-smartphone"></i> Baixar Aplicativo</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="container hero-grid">
+      <div class="fade-up">
+        <div class="pill pill-primary"><i class="icon icon-clock"></i> Atendimento 24 horas por dia</div>
+        <h1 class="hero-title">Reparos – <span class="text-primary">Pronto Serviço</span></h1>
+        <p class="hero-lead">Não perca tempo procurando prestadores de serviços na sua cidade. Encontramos o profissional certo, na hora certa.</p>
+        <ul class="bullets">
+          <li><span class="tick"><i class="icon icon-check"></i></span> Serviço rápido e confiável</li>
+          <li><span class="tick"><i class="icon icon-check"></i></span> Aplicativo totalmente grátis</li>
+          <li><span class="tick"><i class="icon icon-check"></i></span> Atendimento 24 horas</li>
+          <li><span class="tick"><i class="icon icon-check"></i></span> Prestadores disponíveis em tempo real</li>
+          <li><span class="tick"><i class="icon icon-check"></i></span> Economize tempo e dinheiro</li>
+        </ul>
+        
+
+          <div id="download" class="hero-cta">
+    
+
+<a href="https://play.google.com/store/apps/details?id=scallop.aplicativos.reparos" target="_blank" class="store-badge" rel="noopener noreferrer">
+    <img class="google-badge" src="imagens/google.png" alt="Google Play">
+</a>
+<a href="https://apps.apple.com/br/app/reparos/id6448963507" target="_blank" class="store-badge" rel="noopener noreferrer">
+    <img class="app-badge" src="imagens/app.png" alt="Download na App Store">
+</a>
+
+
+    <div class="hero-player">
+
+            <!-- musica -->
+  <span class="pill pill-primary">
+    <i class="icon icon-heart"></i> Música Oficial
+  </span>
+
+  <div class="player">
+    <button id="playBtn" class="play-btn" aria-label="Reproduzir">
+      <i id="playIcon" class="icon icon-music"></i>
+    </button>
+
+    <div class="player-info">
+      <div class="track-title">Tema Reparos</div>
+      <div class="track-sub">Reparos — Pronto Serviço</div>
+
+      <div class="progress">
+        <div id="progressBar" class="progress-bar"></div>
+        <div class="player-time">
+    <span id="currentTime">0:00</span>
+    <span id="duration">0:00</span>
+</div>
+      </div>
+    </div>
+  </div>
+
+  <audio
+    id="audioEl"
+    src="audio/musica-reparos.mp3"
+    preload="metadata">
+</audio>
+</div>
+        </div>
+      </div>
+      <div class="hero-visual fade-up">
+        <div class="hero-illu">
+          <img src="imagens/celular.png" alt="Aplicativo Reparos" />
+          <div class="float-card" style="top:1rem;left:-.5rem">
+            <div class="fc-icon"><i class="icon icon-star" style="color:#eab308"></i></div>
+            <div><div class="fc-title">4.0</div><div class="fc-sub">Avaliações positivas</div></div>
+          </div>
+          <div class="float-card" style="top:33%;right:-.5rem;animation-delay:.2s">
+            <div class="fc-icon"><i class="icon icon-map-pin" style="color:var(--primary)"></i></div>
+            <div><div class="fc-title">Perto de você</div><div class="fc-sub">Geolocalização em tempo real</div></div>
+          </div>
+          <!-- <div class="float-card" style="bottom:4rem;left:-.5rem;animation-delay:.5s">
+            <div class="fc-icon"><i class="icon icon-users" style="color:var(--accent)"></i></div>
+            <div><div class="fc-title">+120 profissionais</div><div class="fc-sub">Disponíveis agora</div></div> -->
+          </div>
+          <div class="float-card" style="bottom:1rem;right:1rem;animation-delay:.7s">
+            <div class="fc-icon"><i class="icon icon-clock" style="color:var(--primary)"></i></div>
+            <div><div class="fc-title">24h</div><div class="fc-sub">Sempre online</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INICIO-->
+  <section class="trust">
+    <div class="container trust-grid">
+      <div><div class="trust-k">24h</div><div class="trust-v">Atendimento contínuo</div></div>
+      <!-- <div><div class="trust-k">100%</div><div class="trust-v">Aplicativo gratuito</div></div> -->
+      <div><div class="trust-k">Real-time</div><div class="trust-v">Geolocalização</div></div>
+      <!-- <div><div class="trust-k">+10 anos</div><div class="trust-v">No mercado</div></div> -->
+    </div>
+  </section>
+
+  <!-- Serviços-->
+  <section id="servicos" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="kicker">Serviços</span>
+        <h2>Variedade de serviços em um só app</h2>
+        <p>Profissionais especializados em diversas áreas: reparos elétricos, hidráulicos, pintura, carpintaria e muito mais.</p>
+      </div>
+      <div class="services-grid" id="servicesGrid"></div>
+      <div class="services-illu">
+        <img src="imagens/profissionais.png" alt="Profissionais Reparos" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Diferenciais-->
+  <section class="section bg-surface">
+    <div class="container">
+      <div class="section-header">
+        <span class="kicker">Diferenciais</span>
+        <h2>Por que escolher o Reparos</h2>
+        <p>Tecnologia, segurança e praticidade em cada solicitação.</p>
+      </div>
+      <div class="cards-grid" id="differentialsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Como funciona-->
+  <section id="como-funciona" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="kicker">Como funciona</span>
+        <h2>Do pedido ao serviço, em 5 passos</h2>
+        <p>O Reparos é uma ferramenta que liga o cliente ao prestador de serviços — simples assim.</p>
+      </div>
+      <ol class="steps" id="stepsList"></ol>
+    </div>
+  </section>
+
+  <!-- Quem somos-->
+  <section id="quem-somos" class="section">
+    <div class="container about-grid">
+      <div class="about-illu">
+        <img src="imagens/pessoas.png" alt="Time Reparos" loading="lazy" />
+      </div>
+      <div>
+        <div class="section-header left">
+          <span class="kicker">Quem somos</span>
+          <h2>Conectando pessoas ao serviço certo</h2>
+        </div>
+        <div class="prose">
+          <p>Hoje em dia, com a grande concorrência, sabemos o quanto é difícil para profissionais liberais conquistar um cliente e mantê-lo a longo prazo.</p>
+          <p>É uma missão árdua encontrar um prestador no momento exato em que está precisando do seu serviço.</p>
+          <p>Pensando nisso, o <strong>REPAROS</strong> chegou para solucionar esse problema, tornando-se um elo entre clientes e prestadores de serviços.</p>
+          <p>Nossa missão é oferecer todo o suporte necessário para que profissionais dos mais diversos ramos possam alcançar o sucesso financeiro através da nossa Plataforma.</p>
+          <p>A <strong>Vieira & Cia. Ltda. – ME</strong>, ora denominada REPAROS, é uma empresa de tecnologia voltada para o desenvolvimento de Software, Sites e Aplicativos, fundada em junho de 2013.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Para profissionais -->
+  <section id="profissionais" class="section bg-surface">
+    <div class="container about-grid reverse">
+      <div>
+        <div class="section-header left">
+          <span class="kicker">Para profissionais</span>
+          <h2>Junte-se ao time Reparos</h2>
+        </div>
+        <div class="prose">
+          <p>Indo contra a realidade da crise no mercado de trabalho, <strong>a área de tecnologia está cada vez mais em alta</strong>.</p>
+          <p>Utilizamos os recursos de TI para aproximar demandas de oportunidades às ofertas de mão de obra.</p>
+          <p>Criamos uma estrutura com geolocalização e mensagens instantâneas, onde <strong>clientes e profissionais mais próximos podem conectar-se em tempo real</strong>.</p>
+          <p>O profissional, mesmo sem sair de casa ou do escritório, é encontrado com rapidez pelo cliente exatamente quando este está precisando dos seus serviços — <strong>economizando tempo e dinheiro</strong>.</p>
+        </div>
+        <!-- <a href="#" class="btn btn-primary" style="margin-top:2rem">Quero ser um profissional <i class="icon icon-chevron-right"></i></a> -->
+      </div>
+      <div class="pro-illu">
+        <img src="imagens/time.png" alt="Profissional Reparos" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS-->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="kicker">Benefícios</span>
+        <h2>Vantagens para quem atende com o Reparos</h2>
+      </div>
+      <div class="cards-grid" id="benefitsGrid"></div>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section class="section">
+    <div class="container">
+      <div class="final-cta">
+        <div class="cta-blob-1"></div>
+        <div class="cta-blob-2"></div>
+        <div class="cta-inner">
+          <h2>Solicite um serviço agora — atendimento 24 horas</h2>
+          <p>Baixe o Reparos e conecte-se aos profissionais mais próximos de você em tempo real.</p>
+          <div class="cta-actions">
+            <!-- <a href="#" class="btn btn-primary"><i class="icon icon-smartphone"></i> Baixar Aplicativo</a>
+            <a href="#profissionais" class="btn btn-ghost">Quero ser Prestador</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- ==================== RODAPÉ ==================== -->
+<footer id="contato" class="footer">
+    <div class="container footer-grid">
+        
+        <div class="footer-brand">
+            <img src="imagens/logo.png" alt="Reparos" class="footer-logo">
+            <p class="footer-desc">
+                Empresa de tecnologia especializada em conectar clientes e profissionais
+                em tempo real, oferecendo praticidade, rapidez e atendimento 24 horas por dia.
+            </p>
+        </div>
+        
+        <div>
+            <h4>Empresa</h4>
+            <ul>
+                <li>
+                    <a href="#quem-somos">
+                        <i class="icon icon-user"></i>
+                        Quem somos
+                    </a>
+                </li>
+                <li>
+                    <a href="#como-funciona">
+                        <i class="icon icon-circle-help"></i>
+                        Como funciona
+                    </a>
+                </li>
+                <li>
+                    <a href="#profissionais">
+                        <i class="icon icon-briefcase"></i>
+                        Quero ser profissional
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div>
+            <h4>Contato</h4>
+            <ul>
+                <li>
+                    <a href="mailto:contato@appreparos.com">
+                        <i class="icon icon-mail"></i>
+                        contato@appreparos.com
+                    </a>
+                </li>
+                <li>
+                    <a href="termos.html">
+                        <i class="icon icon-file-text"></i>
+                        Termos de Uso
+                    </a>
+                </li>
+                <li>
+                    <a href="privacidade.html">
+                        <i class="icon icon-shield-check"></i>
+                        Política de Privacidade
+                    </a>
+                </li>
+                <li>
+                  <a href="faq.html">
+                   <i class="icon icon-circle-help"></i>
+                     FAQ
+                      </a>
+                      <li>
+                    <a href="https://youtube.com/@nandovieira-z5x?si=dkeXl9M95Qnmhd3n"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.5 15.5v-7L16 12l-6.5 3.5z"/>
+                       </svg>
+                        Canal no YouTube
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <p>© 2023 Reparos • Todos os direitos reservados.</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
