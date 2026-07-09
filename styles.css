@@ -461,7 +461,7 @@ linear-gradient(
 
 .hero-title {
  
-  font-size:clamp(2rem,8vw,4.6rem);
+  font-size: clamp(2.8rem,5vw,4.6rem);
 line-height:1;
 font-weight:800;
   font-weight: 700;
@@ -523,6 +523,8 @@ font-weight:800;
 
 .hero-illu img{
     width:100%;
+    max-width:100%;
+    height:auto;
     display:block;
 }
 
@@ -783,8 +785,18 @@ font-weight:800;
 }
 
 .services-illu img {
-  max-width:64rem;
-  margin:0 auto;
+    width:100%;
+    max-width:64rem;
+    height:auto;
+    margin:0 auto;
+}
+
+.about-illu img,
+.pro-illu img {
+    width:100%;
+    max-width:28rem;
+    height:auto;
+    margin:0 auto;
 }
 
 .cards-grid {
@@ -1207,23 +1219,10 @@ font-weight:800;
 
 .footer-grid{
     display:grid;
-    grid-template-columns:1fr;
-    gap:2rem;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:5rem;
     align-items:flex-start;
 }
-
-@media(min-width:768px){
-    .footer-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-}
-
-@media(min-width:1024px){
-    .footer-grid{
-        grid-template-columns:2fr 1fr 1fr;
-    }
-}
-
 
 @media(min-width:768px) {
   .footer-grid {
@@ -1530,26 +1529,29 @@ DOWNLOAD
 
 @media (max-width:768px){
 
-.hero{
-    padding-top:110px;
-}
+    html,
+    body{
+        overflow-x:hidden;
+        width:100%;
+    }
 
-.hero-title{
-    text-align:center;
-}
+    *{
+        max-width:100%;
+    }
 
-.hero-lead{
-    text-align:center;
-    font-size:1rem;
-}
+    .container{
+        width:100%;
+        padding:0 16px;
+    }
 
-.hero-cta{
-    justify-content:center;
-}
+    .hero-grid,
+    .about-grid,
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
 
-.bullets{
-    margin-left:auto;
-    margin-right:auto;
-}
+    .footer{
+        overflow:hidden;
+    }
 
 }
