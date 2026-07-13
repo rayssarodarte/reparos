@@ -298,15 +298,23 @@ ul {
 }
 
 .menu-toggle {
-  background: none;
+  background: #ffffff;
   border: none;
 
-  padding: .5rem;
-  border-radius: .5rem;
+  padding: .6rem .8rem;
+  border-radius: .6rem;
 
   cursor: pointer;
-  color: var(--fg);
-  font-size: 1.25rem;
+  color: #0E6088;
+  font-size: 1.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-toggle:hover {
+  background: #F3FBFF;
 }
 
 .menu-toggle:hover {
@@ -1667,5 +1675,12 @@ DOWNLOAD
     .footer{
         overflow:hidden;
     }
+    .menu-icon {
+  color: #0E6088;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1;
+  display: block;
+}
 
 }
