@@ -27,7 +27,7 @@ const BENEFITS = [
   { icon: "map-pin", title: "Geolocalização", desc: "Seja encontrado pelos clientes mais próximos do seu local." },
   { icon: "message-circle", title: "Mensagens instantâneas", desc: "Comunicação direta com o cliente em tempo real." },
   { icon: "calendar", title: "Agendamento", desc: "Organize sua agenda com facilidade dentro do app." },
-  { icon: "wallet", title: "Aplicativo gratuito", desc: "Cadastre-se e comece a atender sem custos iniciais." },
+  // { icon: "wallet", title: "Aplicativo gratuito", desc: "Cadastre-se e comece a atender sem custos iniciais." },
 ];
 
 const STEPS = [
